@@ -28,6 +28,9 @@ header {
   padding: 0 1rem; /*make sure the text does not stick to the edge */
   width: 100%;
   box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 header a {
@@ -64,6 +67,19 @@ nav {
   left: 0;
   box-shadow: inherit;
   display: none; /* nav not part of the DOM flow by default */
+  top: 100%; /*when checked nav starts from bottom of parent element */
+}
+/*nav toggle with css*/
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
 }
 
 main {
@@ -78,6 +94,7 @@ its width/height if defined
 
 otherwise, content size
   */
+  margin-top: 47px;
 }
 
 footer {
