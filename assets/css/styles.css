@@ -1,0 +1,38 @@
+/* 
+* rule overrides all of the other defaults. So no padding, no margin and border box where size of content includes border and padding as well so that sizes are consistent across different tags
+*/
+/*CTRL SHIFT R to refresh the cache on live server */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  color: #3a3a3a;
+}
+
+header {
+  background-color: lightcoral;
+}
+
+main {
+  background-color: lightblue;
+  flex: 1 0 auto; /*make main element take any surplus space to push footer down. flex-grow, flex-shrink, flex-basis
+  
+  flex-basis: auto
+
+The starting size of the child comes from:
+
+its width/height if defined
+
+otherwise, content size
+  */
+}
+
+footer {
+  background-color: orange;
+}
