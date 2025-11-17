@@ -25,6 +25,10 @@ header {
   background-color: lightcoral;
 }
 
+h1 {
+  font-family: "Oswald", sans-serif;
+}
+
 main {
   background-color: lightblue;
   flex: 1 0 auto; /*make main element take any surplus space to push footer down. flex-grow, flex-shrink, flex-basis
