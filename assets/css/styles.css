@@ -1,22 +1,85 @@
-/* 
-* rule overrides all of the other defaults. So no padding, no margin and border box where size of content includes border and padding as well so that sizes are consistent across different tags
-*/
-/*CTRL SHIFT R to refresh the cache on live server */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap");
+/*google fonts imports */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/* 
+* rule overrides all of the other defaults. So no padding, no margin and border box where size of content includes border and padding as well so that sizes are consistent across different tags
+*/
+/*CTRL SHIFT R to refresh the cache on live server */
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: #3a3a3a;
+  font-family: "Lato", sans-serif;
 }
 
 header {
-  background-color: lightcoral;
+  background-color: #ffffff;
+  position: fixed;
+  z-index: 99;
+  padding: 0 1rem; /*make sure the text does not stick to the edge */
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+header a {
+  text-decoration: none;
+  color: inherit; /*makes links same color of text established in body tag */
+}
+
+h1 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
+}
+
+#menu {
+  font-size: 1.1rem;
+  letter-spacing: 4px;
+  list-style-type: none;
+}
+
+#menu > li {
+  margin-bottom: 1em; /*inherits size of 1.1rem parent so its 17.6px if broswer standard is 16px. This allows for more precise control over size and more consistency */
+}
+
+.active {
+  border-bottom: 1px solid #3a3a3a;
+}
+
+nav {
+  position: absolute;
+  background-color: #ffffff;
+  width: 100%;
+  padding: 0 1rem;
+  left: 0;
+  box-shadow: inherit;
+  display: none; /* nav not part of the DOM flow by default */
+  top: 100%; /*when checked nav starts from bottom of parent element */
+}
+/*nav toggle with css*/
+#nav-toggle:checked ~ nav {
+  display: block;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
 }
 
 main {
@@ -31,6 +94,7 @@ its width/height if defined
 
 otherwise, content size
   */
+  margin-top: 47px;
 }
 
 footer {
