@@ -1,18 +1,24 @@
-/* 
-* rule overrides all of the other defaults. So no padding, no margin and border box where size of content includes border and padding as well so that sizes are consistent across different tags
-*/
-/*CTRL SHIFT R to refresh the cache on live server */
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap");
+/*google fonts imports */
+
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
+/* 
+* rule overrides all of the other defaults. So no padding, no margin and border box where size of content includes border and padding as well so that sizes are consistent across different tags
+*/
+/*CTRL SHIFT R to refresh the cache on live server */
 
 body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   color: #3a3a3a;
+  font-family: "Lato", sans-serif;
 }
 
 header {
