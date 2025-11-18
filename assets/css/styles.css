@@ -100,3 +100,30 @@ otherwise, content size
 footer {
   background-color: orange;
 }
+
+/* media queries go always at the bottom of the file and smaller screens queries first */
+
+/*The base styling is for smartphones so the next screensize to adapt is TABLET: STANDARD BREAKPOINT WIDTH 768PX */
+
+@media screen and (min-width: 768px) {
+  /*Header*/
+  nav {
+    display: block;
+    position: relative; /*pushes menu back inside header */
+    box-shadow: none;
+    width: fit-content;
+    padding-right: 1rem;
+  }
+
+  #menu {
+    display: flex;
+  }
+
+  #menu > li {
+    padding-left: 1rem;
+  }
+
+  .nav-toggle-label {
+    display: none;
+  }
+}
