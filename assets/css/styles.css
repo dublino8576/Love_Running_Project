@@ -97,10 +97,24 @@ otherwise, content size
   margin-top: 47px;
 }
 
-footer {
-  background-color: orange;
+/*FOOTER*/
+
+#social-networks {
+  text-align: center;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 0;
 }
 
+#social-networks li {
+  list-style-type: none;
+}
+
+#social-networks i {
+  font-size: 160%;
+  padding: 5%;
+  color: #3a3a3a;
+}
 /* media queries go always at the bottom of the file and smaller screens queries first */
 
 /*The base styling is for smartphones so the next screensize to adapt is TABLET: STANDARD BREAKPOINT WIDTH 768PX */
