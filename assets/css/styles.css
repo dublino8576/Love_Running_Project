@@ -126,4 +126,22 @@ footer {
   .nav-toggle-label {
     display: none;
   }
+
+  #logo {
+    font-size: 280%;
+    line-height: 75px; /* gives more space at the top */
+    margin: 0 0.5rem; /* adds breathing space to the right and left */
+  }
+  /* Adjust main tag so that it not hidden by bigger header */
+
+  main {
+    margin-top: 79px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #menu a:hover {
+    /*from laptop size it is not touch screen anymore and you can interact with content with mouse so you have hover interaction */
+    border-bottom: 1px solid #3a3a3a;
+  }
 }
