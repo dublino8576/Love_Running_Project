@@ -97,6 +97,11 @@ otherwise, content size
   margin-top: 47px;
 }
 
+#hero {
+  height: 600px; /* use pixel for big content only because it will have an image in it*/
+  width: 100%;
+  background: url(../Images/hero-image.webp) no-repeat center center/cover; /*centered horizontally and verticall with no-repeat. Cover for no distorting image */
+}
 /*FOOTER*/
 
 #social-networks {
