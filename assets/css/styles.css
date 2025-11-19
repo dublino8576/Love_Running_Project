@@ -84,7 +84,6 @@ nav {
 }
 
 main {
-  background-color: lightblue;
   flex: 1 0 auto; /*make main element take any surplus space to push footer down. flex-grow, flex-shrink, flex-basis
   
   flex-basis: auto
@@ -125,6 +124,55 @@ otherwise, content size
 #cover-text > h3 {
   color: #ffffff;
 }
+
+#reasons {
+  background-color: #ffffff;
+  width: 90%;
+  margin: 20px auto;
+}
+
+#reasons > h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 280%;
+}
+
+#feel-healthy {
+  line-height: 20px;
+}
+
+#reasons p {
+  padding: 0 20px;
+}
+
+#reasons hr {
+  border-top: 1px solid #3a3a3a;
+  margin: 5px 0;
+}
+
+#benefits-physical > div,
+#benefits-mental > div {
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+
+#circle-cover-bg {
+  background: url(../Images/reasons-image.webp) no-repeat top center/cover;
+  width: 90vw;
+  height: 90vw; /*use same value as width to make a square */
+  margin-bottom: 20px;
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 50%; /*becomes circle */
+  /*image is responsive, increases size up to 300px */
+}
+
+#benefits-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /*FOOTER*/
 
 #social-networks {
