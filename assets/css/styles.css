@@ -199,6 +199,18 @@ otherwise, content size
   color: #fafafa;
 }
 
+/* GALLERY.HTML CONTENT PAGE */
+
+#photos img {
+  width: 100%; /*  images don't overflow horizontally anymore on mobile view*/
+  line-height: 1em; /*keeps the alt readable when images stick together  REMEMBER: break file paths on browser to check the text is readable*/
+}
+
+#photos {
+  /* images are in-line elements in this instance and all inline elements which are treated like text. 
+Text has a default line-height and this causes pictures to have margin between them*/
+  line-height: 0;
+}
 /*FOOTER*/
 
 #social-networks {
