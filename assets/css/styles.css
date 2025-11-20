@@ -200,7 +200,6 @@ otherwise, content size
 }
 
 /* GALLERY.HTML CONTENT PAGE */
-
 #photos img {
   width: 100%; /*  images don't overflow horizontally anymore on mobile view*/
   line-height: 1em; /*keeps the alt readable when images stick together  REMEMBER: break file paths on browser to check the text is readable*/
@@ -230,6 +229,15 @@ Text has a default line-height and this causes pictures to have margin between t
   color: #3a3a3a;
 }
 /* media queries go always at the bottom of the file and smaller screens queries first */
+
+/* Gallery.html content */
+/* MASONARY DESIGN STYLED GALLERY for landscape mode larger smartphones*/
+@media screen and (min-width: 576px) {
+  #photos {
+    column-count: 2;
+    column-gap: 0;
+  }
+}
 
 /*The base styling is for smartphones so the next screensize to adapt is TABLET: STANDARD BREAKPOINT WIDTH 768PX */
 
@@ -288,12 +296,23 @@ Text has a default line-height and this causes pictures to have margin between t
     text-align: end;
     align-self: flex-end;
   }
+  /* Gallery.html content */
+
+  #photos {
+    column-count: 3;
+  }
 }
 
 @media screen and (min-width: 1024px) {
   #menu a:hover {
     /*from laptop size it is not touch screen anymore and you can interact with content with mouse so you have hover interaction */
     border-bottom: 1px solid #3a3a3a;
+  }
+
+  /* Gallery.html content */
+
+  #photos {
+    column-count: 4;
   }
 }
 
