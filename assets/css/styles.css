@@ -356,6 +356,30 @@ Text has a default line-height and this causes pictures to have margin between t
   #photos {
     column-count: 3;
   }
+
+  /* SIGN-UP PAGE */
+
+  #signup {
+    position: relative;
+    background-position: center;
+  }
+
+  #signup-form {
+    max-width: 400px;
+    position: absolute;
+    top: 50px; /* changed from 150px as does not fit tablet view */
+    left: 10%;
+  }
+
+  .text-input:hover {
+    border-color: #f16c6b;
+    background-color: #fafafa;
+  }
+
+  .join-button:hover {
+    background-color: #fafafa;
+    color: #454b1b;
+  }
 }
 
 @media screen and (min-width: 1024px) {
