@@ -373,6 +373,7 @@ Text has a default line-height and this causes pictures to have margin between t
 
   .text-input:hover {
     border-color: #f16c6b;
+    background-color: transparent;
   }
 
   .join-button:hover {
